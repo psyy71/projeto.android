@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype'),
+         url('fontes/idroid.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset e configuração global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5cecb0;
+    color: #000000;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #3AA155;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Navegação */
+nav {
+    background-color: #86d6a248;
+    padding: 5px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin: 0 15px;
+    transition: color 0.3s;
+    padding: 1%;
+}
+
+nav a:hover {
+    color: #b2e7c5;
+}
+
+/* Main */
+main {
+    padding: 30px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    background-color: white;
+}
+
+/* Títulos */
+main h1 {
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #1a5c37;
+    margin-bottom: 15px;
+}
+
+main h2 {
+    font-size: 1.5em;
+    color: #2a7d47;
+    margin: 20px 0 10px;
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+    background-color: #66e87f33;
+}
+
+main h3 {
+    font-size: 1.3em;
+    color: #ffffff;
+    margin-top: 30px;
+    background-color: #3b9f5b;
+    border-radius: 10px;
+    display: flex;
+    padding: 5px;
+}
+
+/* Parágrafos */
+main p {
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+/* Links no texto */
+main a {
+    color: #1a5c37;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/* Listas */
+main ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    margin-top: 10px;
+    background-color: #b2e7c5;
+
+}
+
+main li {
+    margin-bottom: 5px;
+}
+
+/* Imagens e figuras */
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Vídeos */
+iframe {
+    display: block;
+    margin: 30px auto;
+    max-width: 100%;
+    border: none;
+}
+
+.titulo {
+  background-color: #3ea76d;
+  border-radius: 10px 10px 0px 0px;
+  margin-bottom: 0px;
+}
+
+.titulo h3 {
+  color: white;
+  margin: 0;
+}
+
+.conteudo {
+  background-color: #aee6c1;
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* espaço entre os itens */
+  padding-left: 20px;
+  background-color: #b2e7c5;
+  list-style-position: inside;
+}
+
+.lista li {
+  flex-basis: calc(50% - 10px); /* largura dos itens */
+  text-align: left;
+}
+
+.lista li::before {
+    content: "✔️ ";
+}
+
